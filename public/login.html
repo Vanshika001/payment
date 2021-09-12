@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/login.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <div class="content">
+                <div class="logo"><a href="#">TR<span>Ǝ</span>ND</a></div>
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="MaleProducts.html" class="desktop-link">MEN</a>
+                        <input type="checkbox" id="show-features">
+                        <label for="show-features">MEN</label>
+                        <ul>
+                            <li><a href="MaleProducts.html">T-shirts</a></li>
+                            <li><a href="MaleProducts.html">Shirts</a></li>
+                            <li><a href="MaleProducts.html">Jeans</a></li>
+                            <li><a href="MaleProducts.html">Jackets</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="FemaleProducts.html" class="desktop-link">WOMEN</a>
+                        <input type="checkbox" id="show-features1">
+                        <label for="show-features1">WOMEN</label>
+                        <ul>
+                            <li><a href="FemaleProducts.html">T-shirts</a></li>
+                            <li><a href="FemaleProducts.html">Tops</a></li>
+                            <li><a href="FemaleProducts.html">Jeans</a></li>
+                            <li><a href="FemaleProducts.html">Dresses</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="KidsProducts.html" class="desktop-link">KIDS</a>
+                        <input type="checkbox" id="show-features2">
+                        <label for="show-features2">KIDS</label>
+                        <ul>
+                            <li><a href="KidsProducts.html">T-shirts</a></li>
+                            <li><a href="KidsProducts.html">Jeans</a></li>
+                            <li><a href="KidsProducts.html">Dresses</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="BeautyProducts.html" class="desktop-link">BEAUTY</a>
+                        <input type="checkbox" id="show-features3">
+                        <label for="show-features3">BEAUTY</label>
+                        <ul>
+                            <li><a href="BeautyProducts.html">Lipstick</a></li>
+                            <li><a href="BeautyProducts.html">Eyeliner</a></li>
+                            <li><a href="BeautyProducts.html">Kajal</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+            <form action="#" class="search-box">
+                <input type="text" placeholder="Type Something to Search..." required>
+                <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+            </form>
+            <div class="icons">
+                <a href="login.html"><i class="fas fa-user icon"></i></a>
+                <i class="far fa-heart icon"></i>
+                <i class="fad fa-shopping-cart icon"></i>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Login  -->
+    <section class="section-form">
+        <div class="form-container">
+            <form class="form" id="login">
+                <h1 class="form__title">Login</h1>
+                <div class="form__message form__message--error"></div>
+                <div class="form__input-group">
+                    <input type="text" class="form__input" autofocus placeholder="Username or email">
+                    <div class="form__input-error-message"></div>
+                </div>
+                <div class="form__input-group">
+                    <input type="password" class="form__input" autofocus placeholder="Password">
+                    <div class="form__input-error-message"></div>
+                </div>
+                <button class="form__button" type="submit">Continue</button>
+                <p class="form__text">
+                    <a href="#" class="form__link">Forgot your password?</a>
+                </p>
+                <p class="form__text">
+                    <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
+                </p>
+            </form>
+            <form class="form form--hidden" id="createAccount">
+                <h1 class="form__title">Create Account</h1>
+                <div class="form__message form__message--error"></div>
+                <div class="form__input-group">
+                    <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username">
+                    <div class="form__input-error-message"></div>
+                </div>
+                <div class="form__input-group">
+                    <input type="text" class="form__input" autofocus placeholder="Email Address">
+                    <div class="form__input-error-message"></div>
+                </div>
+                <div class="form__input-group">
+                    <input type="password" class="form__input" autofocus placeholder="Password">
+                    <div class="form__input-error-message"></div>
+                </div>
+                <div class="form__input-group">
+                    <input type="password" class="form__input" autofocus placeholder="Confirm password">
+                    <div class="form__input-error-message"></div>
+                </div>
+                <button class="form__button" type="submit">Continue</button>
+                <p class="form__text">
+                    <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
+                </p>
+            </form>
+        </div>
+    </section>
+    <!-- Footer section -->
+    <footer>
+        <div class="footer-container">
+            <div class="section aboutus">
+                <h2>About Us</h2>
+                <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant
+                    impression.
+                    Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un
+                    imprimeur
+                    anonyme
+                    assembla
+                    ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.</p>
+                <ul class="section-icon">
+                    <li><a href="#"><i class="fab fa-facebook-f icon"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram icon"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube icon"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter icon"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quickLinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="sec contact">
+                <h2>Contact info</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fas fa-map-marker-alt"></i></span>
+                        <span>Shop no-256,Mughal Canal <br>
+                            Karnal,Haryana <br> India</span>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-phone-alt"></i></span>
+                        <p><a href="tel:916924758900">+91 692 475 8900</a><br>
+                            <a href="tel:919671238001">+91 967 123 8001</a>
+                        </p>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-envelope"></i></span>
+                        <p><a href="mailto:vanshikaraman3@gmail.com">vanshikaraman3@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>Copyright By Vanshika.All Rights Reserved.</p>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+
+</html>

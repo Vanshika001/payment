@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <div class="content">
+                <div class="logo"><a href="#">TR<span>Ǝ</span>ND</a></div>
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="MaleProducts.html" class="desktop-link">MEN</a>
+                        <input type="checkbox" id="show-features">
+                        <label for="show-features">MEN</label>
+                        <ul>
+                            <li><a href="MaleProducts.html">T-shirts</a></li>
+                            <li><a href="MaleProducts.html">Shirts</a></li>
+                            <li><a href="MaleProducts.html">Jeans</a></li>
+                            <li><a href="MaleProducts.html">Jackets</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="FemaleProducts.html" class="desktop-link">WOMEN</a>
+                        <input type="checkbox" id="show-features1">
+                        <label for="show-features1">WOMEN</label>
+                        <ul>
+                            <li><a href="FemaleProducts.html">T-shirts</a></li>
+                            <li><a href="FemaleProducts.html">Tops</a></li>
+                            <li><a href="FemaleProducts.html">Jeans</a></li>
+                            <li><a href="FemaleProducts.html">Dresses</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="KidsProducts.html" class="desktop-link">KIDS</a>
+                        <input type="checkbox" id="show-features2">
+                        <label for="show-features2">KIDS</label>
+                        <ul>
+                            <li><a href="KidsProducts.html">T-shirts</a></li>
+                            <li><a href="KidsProducts.html">Jeans</a></li>
+                            <li><a href="KidsProducts.html">Dresses</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="BeautyProducts.html" class="desktop-link">BEAUTY</a>
+                        <input type="checkbox" id="show-features3">
+                        <label for="show-features3">BEAUTY</label>
+                        <ul>
+                            <li><a href="BeautyProducts.html">Lipstick</a></li>
+                            <li><a href="BeautyProducts.html">Eyeliner</a></li>
+                            <li><a href="BeautyProducts.html">Kajal</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+            <form action="#" class="search-box">
+                <input type="text" placeholder="Type Something to Search..." required>
+                <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+            </form>
+            <div class="icons">
+                <a href="login.html"><i class="fas fa-user icon"></i></a>
+                <i class="far fa-heart icon"></i>
+                <a data-modal-target="#modal"><i class="fad fa-shopping-cart icon"></i></a>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- Single Product Detail  -->
+
+
+    <section class="single-item">
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2 column-1">
+                    <img class="image shop-item-image" src="images/F1.jfif" id="productImage" width="100%">
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="images/Wred1.jfif" class="smallImage" alt="1">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/Wred2.jfif" class="smallImage" alt="2">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/Wred3.jfif" class="smallImage" alt="3">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/Wred4.jfif" class="smallImage" alt="4">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 column-2">
+                    <div class="shop-item">
+                        <h3>H&M</h3>
+                        <h1 class="shop-item-title">Women Sweetheart Neck Ruffle Trim Lace Insery Peplum Top - M/Red
+                            Bright
+                        </h1>
+                        <h4 class="shop-item-price">Rs.1199</h4>
+                        <select>
+                            <option>Select Size</option>
+                            <option>XXL</option>
+                            <option>XL</option>
+                            <option>L</option>
+                            <option>M</option>
+                            <option>S</option>
+                        </select>
+                        <input class="cart-quantity-input" type="number" value="1" min="0" max="100">
+                        <a data-modal-target="#modal" class="shop-item-button"><button class="cartButton"> Add To
+                                cart</button></a>
+                        <h3 class="product-detail">Product Details<i class="fa fa-indent"></i></h3>
+                        <br>
+                        <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page
+                            avant
+                            impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années
+                            1500,
+                            quand
+                            un imprimeur
+                            anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices
+                            de
+                            texte.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pop-up  -->
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="title">
+                <h2 class="section-header">CART</h2>
+            </div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">Rs.0</span>
+            </div>
+            <button class="btn purchase-button" type="button">PURCHASE</button>
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+    <!-- Related Products  -->
+    <div class="related-products">
+        <h2>Related Products</h2>
+    </div>
+
+    <div class="latest-container">
+        <div class="row">
+            <div class="col-4 column">
+                <!-- box--->
+                <div class="latest-box">
+                    <!-- image--->
+                    <div class="latest-img">
+                        <img class="shop-item-image" src="images/top4.jpg" alt="1">
+                        <div class="latest-overlay">
+                            <button data-modal-target="#modal" class="shop-item-button" type="button">Buy
+                                Now</button>
+                        </div>
+                    </div>
+                    <!-- Detail-box -->
+                    <div class="latest-details">
+                        <!-- type -->
+                        <div class="latest-type">
+                            <a href="ProductDetails.html" class="shop-item-title">Solid Crop Top</a>
+                            <span>H&M</span>
+                        </div>
+                        <!-- price -->
+                        <div class="latest-price shop-item-price">Rs.1299</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 column">
+                <!-- box--->
+                <div class="latest-box">
+                    <!-- image--->
+                    <div class="latest-img">
+                        <img class="shop-item-image" src="images/top6.jpg" alt="2">
+                        <div class="latest-overlay">
+                            <button data-modal-target="#modal" class="shop-item-button" type="button">Buy
+                                Now</button>
+                        </div>
+                    </div>
+                    <!-- Detail-box -->
+                    <div class="latest-details">
+                        <!-- type -->
+                        <div class="latest-type">
+                            <a href="ProductDetails.html" class="shop-item-title">Solid Top</a>
+                            <span>H&M</span>
+                        </div>
+                        <!-- price -->
+                        <div class="latest-price shop-item-price">Rs.1590</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4 column">
+                <!-- box--->
+                <div class="latest-box">
+                    <!-- image--->
+                    <div class="latest-img">
+                        <img class="shop-item-image" src="images/F3.jfif" alt="3">
+                        <div class="latest-overlay">
+                            <button data-modal-target="#modal" class="shop-item-button" type="button">Buy
+                                Now</button>
+                        </div>
+                    </div>
+                    <!-- Detail-box -->
+                    <div class="latest-details">
+                        <!-- type -->
+                        <div class="latest-type">
+                            <a href="ProductDetails.html" class="shop-item-title">Solid Top</a>
+                            <span>H&M</span>
+                        </div>
+                        <!-- price -->
+                        <div class="latest-price shop-item-price">Rs.799</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4 column">
+                <!-- box--->
+                <div class="latest-box">
+                    <!-- image--->
+                    <div class="latest-img">
+                        <img class="shop-item-image" src="images/top2.jpg" alt="4">
+                        <div class="latest-overlay">
+                            <button data-modal-target="#modal" class="shop-item-button" type="button">Buy
+                                Now</button>
+                        </div>
+                    </div>
+                    <!-- Detail-box -->
+                    <div class="latest-details">
+                        <!-- type -->
+                        <div class="latest-type">
+                            <a href="ProductDetails.html" class="shop-item-title">Net Blouson Top</a>
+                            <span>H&M</span>
+                        </div>
+                        <!-- price -->
+                        <div class="latest-price shop-item-price">Rs.999</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer section -->
+    <footer>
+        <div class="footer-container">
+            <div class="section aboutus">
+                <h2>About Us</h2>
+                <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant
+                    impression.
+                    Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un
+                    imprimeur
+                    anonyme
+                    assembla
+                    ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.</p>
+                <ul class="section-icon">
+                    <li><a href="#"><i class="fab fa-facebook-f icon"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram icon"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube icon"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter icon"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quickLinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="sec contact">
+                <h2>Contact info</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fas fa-map-marker-alt"></i></span>
+                        <span>Shop no-256,Mughal Canal <br>
+                            Karnal,Haryana <br> India</span>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-phone-alt"></i></span>
+                        <p><a href="tel:916924758900">+91 692 475 8900</a><br>
+                            <a href="tel:919671238001">+91 967 123 8001</a>
+                        </p>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-envelope"></i></span>
+                        <p><a href="mailto:vanshikaraman3@gmail.com">vanshikaraman3@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>Copyright By Vanshika.All Rights Reserved.</p>
+    </div>
+    <script src="js/product.js"></script>
+    <script src="js/index.js"></script>
+
+
+</body>
+
+</html>

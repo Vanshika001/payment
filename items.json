@@ -1,0 +1,60 @@
+{
+    "latest": [
+        {
+            "id": 1,
+            "name": "Women Solid Crop Top",
+            "price": 999,
+            "brand": "Forever 21",
+            "imgName": "WomenI3.webp"
+        },
+        {
+            "id": 2,
+            "name": "Women Straight Jeans",
+            "price": 2799,
+            "brand": "Levis",
+            "imgName": "WomenI4.jfif"
+        },
+        {
+            "id": 3,
+            "name": "Girls A-Line Dress",
+            "price": 1599,
+            "brand": "H&M",
+            "imgName": "GirlI2.jfif"
+        },
+        {
+            "id": 4,
+            "name": "Men Printed T-shirt",
+            "price": 1499,
+            "brand": "HERE&NOW",
+            "imgName": "MenI4.jfif"
+        },
+        {
+            "id": 5,
+            "name": "3CE Matt Lipstick",
+            "price": 1999,
+            "brand": "3CE",
+            "imgName": "lipstick3.png"
+        },
+        {
+            "id": 6,
+            "name": "Solid Round Neck T-shirt",
+            "price": 899,
+            "brand": "Roadster",
+            "imgName": "MenI3.jfif"
+        },
+        {
+            "id": 7,
+            "name": "Solid Round Neck T-shirt",
+            "price": 1299,
+            "brand": "ZARA",
+            "imgName": "WomenI6.jfif"
+        },
+        {
+            "id": 8,
+            "name": "Women Skinny Fit Jeans",
+            "price": 2999,
+            "brand": "ZARA",
+            "imgName": "WomenI5.jfif"
+        }
+    ]
+}

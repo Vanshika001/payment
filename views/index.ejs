@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://checkout.stripe.com/checkout.js" defer></script>
+    <script>
+        var stripePublicKey = '<%= stripePublicKey %>'
+    </script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Glide css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="wrapper">
+        <nav>
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <div class="content">
+                <div class="logo"><a href="#">TR<span>Ǝ</span>ND</a></div>
+                <ul class="links">
+                    <!-- <li><a href="index.html">Home</a></li> -->
+                    <li>
+                        <a href="MaleProducts.html" class="desktop-link">MEN</a>
+                        <input type="checkbox" id="show-features">
+                        <label for="show-features">MEN</label>
+                        <ul>
+                            <li><a href="MaleProducts.html">T-shirts</a></li>
+                            <li><a href="MaleProducts.html">Shirts</a></li>
+                            <li><a href="MaleProducts.html">Jeans</a></li>
+                            <li><a href="MaleProducts.html">Jackets</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="FemaleProducts.html" class="desktop-link">WOMEN</a>
+                        <input type="checkbox" id="show-features1">
+                        <label for="show-features1">WOMEN</label>
+                        <ul>
+                            <li><a href="FemaleProducts.html">T-shirts</a></li>
+                            <li><a href="FemaleProducts.html">Tops</a></li>
+                            <li><a href="FemaleProducts.html">Jeans</a></li>
+                            <li><a href="FemaleProducts.html">Dresses</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="KidsProducts.html" class="desktop-link">KIDS</a>
+                        <input type="checkbox" id="show-features2">
+                        <label for="show-features2">KIDS</label>
+                        <ul>
+                            <li><a href="KidsProducts.html">T-shirts</a></li>
+                            <li><a href="KidsProducts.html">Jeans</a></li>
+                            <li><a href="KidsProducts.html">Dresses</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="BeautyProducts.html" class="desktop-link">BEAUTY</a>
+                        <input type="checkbox" id="show-features3">
+                        <label for="show-features3">BEAUTY</label>
+                        <ul>
+                            <li><a href="BeautyProducts.html">Lipstick</a></li>
+                            <li><a href="BeautyProducts.html">Eyeliner</a></li>
+                            <li><a href="BeautyProducts.html">Kajal</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+            <form action="#" class="search-box">
+                <input type="text" placeholder="Type Something to Search..." required>
+                <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+            </form>
+            <div class="icons">
+                <a href="login.html"><i class="fas fa-user icon"></i></a>
+                <i class="far fa-heart icon"></i>
+                <a data-modal-target="#modal"><i class="fad fa-shopping-cart icon"></i></a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Banner Section  -->
+    <section class="banner">
+        <div class="banner-container">
+            <div class="banner-img">
+                <img src="images/NewArrivalWomen11.jfif" alt="image">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Facility Section  -->
+    <section class="facility section" id="facility">
+        <div class="facility-container container">
+            <div class="facility-box">
+                <div class="facility-icon">
+                    <i class="fas fa-plane"></i>
+                </div>
+                <p>FREE SHIPPING WORLD WIDE</p>
+            </div>
+
+            <div class="facility-box">
+                <div class="facility-icon">
+                    <i class="fas fa-credit-card"></i>
+                </div>
+                <p>100% MONEY BACK GUARANTEE</p>
+            </div>
+
+            <div class="facility-box">
+                <div class="facility-icon">
+                    <i class="far fa-credit-card"></i>
+                </div>
+                <p>MANY PAYMENT GATWAYS</p>
+            </div>
+
+            <div class="facility-box">
+                <div class="facility-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <p>24/7 ONLINE SUPPORT</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Category -->
+    <section class="section-cat category">
+        <h2 class="title">Allow your style to match your ambition!</h2>
+        <div class="category-center container">
+
+            <div class="category-box">
+                <img src="images/M4.jfif" alt="1">
+                <div class="content">
+                    <h2>Shop for Man</h2>
+                    <a href="MaleProducts.html">shop now</a>
+                </div>
+            </div>
+
+            <div class="category-box">
+                <img src="images/F4.jfif" alt="2">
+                <div class="content">
+                    <h2>Shop for Woman</h2>
+                    <a href="FemaleProducts.html">shop now</a>
+                </div>
+            </div>
+
+            <div class="category-box">
+                <img src="images/K1.jfif" alt="3">
+                <div class="content">
+                    <h2>Shop for Kids</h2>
+                    <a href="KidsProducts.html">shop now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrival -->
+    <section class="section new-arrival">
+        <div class="title">
+            <h1>NEW ARRIVALS</h1>
+        </div>
+
+        <div class="product-center">
+            <div class="product-item">
+                <div class="overlay">
+                    <a href="ProductDetails.html" class="product-thumb">
+                        <img src="images/MenI1.jfif" alt="1" />
+                    </a>
+                </div>
+                <div class="product-info">
+                    <span>Men Slim Fit Casual Shirt</span>
+                    <a href="ProductDetails.html">Roadster</a>
+                    <h4>Rs.1999</h4>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="overlay">
+                    <a href="ProductDetails.html" class="product-thumb">
+                        <img src="images/WomenI1.png" alt="2" />
+                    </a>
+                </div>
+                <div class="product-info">
+                    <span>Women Straight Jeans</span>
+                    <a href="ProductDetails.html">H&M</a>
+                    <h4>Rs.2999</h4>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="overlay">
+                    <a href="ProductDetails.html" class="product-thumb">
+                        <img src="images/lipstick1.png" alt="3" />
+                    </a>
+                </div>
+                <div class="product-info">
+                    <span>Matt Lipstick</span>
+                    <a href="ProductDetails.html">3CE</a>
+                    <h4>Rs.1999</h4>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="overlay">
+                    <a href="ProductDetails.html" class="product-thumb">
+                        <img src="images/MenI2.jfif" alt="4" />
+                    </a>
+                </div>
+                <div class="product-info">
+                    <span>Washed Denim Jacket</span>
+                    <a href="ProductDetails.html">Tommy Hilfiger</a>
+                    <h4>Rs.3999</h4>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="overlay">
+                    <a href="ProductDetails.html" class="product-thumb">
+                        <img src="images/KidI1.png" alt="5" />
+                    </a>
+                </div>
+                <div class="product-info">
+                    <span>Girls Fit And Flare Dress</span>
+                    <a href="ProductDetails.html">Forever 21</a>
+                    <h4>Rs.1199</h4>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="overlay">
+                    <a href="ProductDetails.html" class="product-thumb">
+                        <img src="images/BeautyI1.png" alt="6" />
+                    </a>
+                </div>
+                <div class="product-info">
+                    <span>Matt Lipstick</span>
+                    <a href="ProductDetails.html">3ce</a>
+                    <h4>Rs.2599</h4>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="overlay">
+                    <a href="ProductDetails.html" class="product-thumb">
+                        <img src="images/Kid2.jfif" alt="7" />
+                    </a>
+                </div>
+                <div class="product-info">
+                    <span>Girls Skinny Fit Jeans</span>
+                    <a href="ProductDetails.html">Forever 21</a>
+                    <h4>Rs.1999</h4>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="overlay">
+                    <a href="ProductDetails.html" class="product-thumb">
+                        <img src="images/WomenI2.jfif" alt="8" />
+                    </a>
+                </div>
+                <div class="product-info">
+                    <span>Women White Dress</span>
+                    <a href="ProductDetails.html">H&M</a>
+                    <h4>Rs.3299</h4>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Beauty Banner -->
+    <section>
+        <div class="beauty-banner">
+            <div class="glide" id="glide1">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <div class="center">
+                                <div class="left">
+                                    <h1>Beauty Products</h1>
+                                    <p>World's Best Brands</p>
+                                    <a href="BeautyProducts.html" class="banner-btn">SHOP NOW</a>
+                                </div>
+                                <div class="right">
+                                    <img class="img1" src="images/lipstick5.jfif" alt="">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="center">
+                                <div class="left">
+                                    <h1>Beauty Products</h1>
+                                    <p>World's Best Brands</p>
+                                    <a href="BeautyProducts.html" class="banner-btn">SHOP NOW</a>
+                                </div>
+                                <div class="right">
+                                    <img class="img1" src="images/face.jfif" alt="">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="center">
+                                <div class="left">
+                                    <h1>Beauty Products</h1>
+                                    <p>World's Best Brands</p>
+                                    <a href="BeautyProducts.html" class="banner-btn">SHOP NOW</a>
+                                </div>
+                                <div class="right">
+                                    <img class="img1" src="images/eyeliner2.jfif" alt="">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="title">
+                <h2 class="section-header">CART</h2>
+            </div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn purchase-button" type="button">PURCHASE</button>
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+    <section>
+        <div class="latest-products">
+            <h1>Latest Products</h1>
+        </div>
+        <div class="latest-container">
+            <div class="row">
+                <% items.latest.forEach(function(item){ %>
+                    <div class="col-4 column" data-item-id="<%= item.id %>">
+                        <!-- box--->
+                        <div class="latest-box">
+                            <!-- image--->
+                            <div class="latest-img">
+                                <img class="shop-item-image" src="images/<%= item.imgName %>" alt="1">
+                                <div class="latest-overlay">
+                                    <button data-modal-target="#modal" class="shop-item-button" type="button">Buy
+                                        Now</button>
+                                </div>
+                            </div>
+                            <!-- Detail-box -->
+                            <div class="latest-details">
+                                <!-- type -->
+                                <div class="latest-type">
+                                    <a href="ProductDetails.html" class="shop-item-title">
+                                        <%= item.name%>
+                                    </a>
+                                    <span>
+                                        <%= item.brand %>
+                                    </span>
+                                </div>
+                                <!-- price -->
+                                <div class="latest-price shop-item-price">Rs.<%= item.price %>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <% }) %>
+            </div>
+        </div>
+    </section>
+    <!-- Newsletter Section -->
+    <section>
+        <div class="newsletter">
+            <div class="row">
+                <div class="col">
+                    <div class="newsletter-sub">
+                        <h2>Subscribe To Our Newsletter</h2>
+                        <p>Subscribe to our newsletter and get 20% off your first purchase</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="newsletter-email">
+                        <form action="" method="post">
+                            <input type="email" name="email" placeholder="Email Address">
+                            <button type="submit" class="sub-btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer section -->
+    <footer>
+        <div class="footer-container">
+            <div class="section aboutus">
+                <h2>About Us</h2>
+                <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant
+                    impression.
+                    Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur
+                    anonyme
+                    assembla
+                    ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.</p>
+                <ul class="section-icon">
+                    <li><a href="#"><i class="fab fa-facebook-f icon"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram icon"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube icon"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter icon"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quickLinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="sec contact">
+                <h2>Contact info</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fas fa-map-marker-alt"></i></span>
+                        <span>Shop no-256,Mughal Canal <br>
+                            Karnal,Haryana <br> India</span>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-phone-alt"></i></span>
+                        <p><a href="tel:916924758900">+91 692 475 8900</a><br>
+                            <a href="tel:919671238001">+91 967 123 8001</a>
+                        </p>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-envelope"></i></span>
+                        <p><a href="mailto:vanshikaraman3@gmail.com">vanshikaraman3@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>Copyright By Vanshika.All Rights Reserved.</p>
+    </div>
+
+    <script src="js/index.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+
+</html>
